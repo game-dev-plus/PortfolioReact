@@ -1,0 +1,72 @@
+.header{
+    font-size: 50px;
+    font-weight: normal;
+}
+.halfscreen{
+    height: 50vh;
+}
+.bgWhite50{
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.59);
+    height: 130%;
+    width: 70%;
+    border-radius: 20px;
+    margin: 2% 15% 0% 15%;
+    overflow: visible;
+    padding-top: 20px
+}
+.descriptionTechnologies{
+    color:white;
+    margin: 0 10px 0 0;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}
+.techimg{
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 0px 0px;
+
+}
+table td {
+    border-right: 1px solid rgb(204, 204, 204);
+}
+table th {
+    border-right: 1px solid rgb(204, 204, 204);
+}
+table td:last-child {
+    border-right: none;
+}
+table th:last-child {
+    border-right: none;
+}
+.stretch{
+    width: 100%;
+}
+.techimgdesc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #262933;
+    text-align: center;
+    font-weight:bold;
+    margin: 20px;
+}
+.separator{
+    margin: 1px 10%;
+    border: 1px solid #DDDDDD;
+}
+.listnobullet{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.listnobullet li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #262933;
+    margin-top: 20px;
+    padding: 0px;
+}
+.top{
+    vertical-align:top;
+}

@@ -1,13 +1,12 @@
-
 @font-face {
     font-family: "HelveticaNeueMedium";
     src: url("../css/fonts/HelveticaNeue-Medium.ttf") format('truetype');
-    }
-    
+}
+
 .bgBlue{
     background-color: #262933;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     position: absolute;
     padding: 0% 0px 0px 0px;

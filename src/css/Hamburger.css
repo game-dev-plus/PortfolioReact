@@ -36,3 +36,9 @@
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+.margin-top-40{
+  margin-top: 40px;
+}
+.nav{
+  text-decoration: none;
+}
