@@ -8,12 +8,15 @@
 .bgWhite50{
     background: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.59);
-    height: 130%;
-    width: 70%;
+    height: fit-content;
+    width: auto;
     border-radius: 20px;
-    margin: 2% 15% 0% 15%;
+    margin: 2% 10% 10% 10%;
+    padding: 2% 5% 10% 5%;
     overflow: visible;
-    padding-top: 20px
+    padding-top: 20px;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 .descriptionTechnologies{
     color:white;

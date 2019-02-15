@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import "../css/HeadingTab.css";
-import Menu from "@material-ui/core/Menu";
 import SwipeableViews from "react-swipeable-views";
-import { Paper, Tabs, Tab, GridList,GridListTile, GridListTileBar,IconButton,Icon} from "@material-ui/core";
+import { Paper, Tabs, Tab, GridList,GridListTile, GridListTileBar,IconButton} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import Chip from "@material-ui/core/Chip";
-import classNames from 'classnames';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,24 +13,24 @@ var headings = [
     subitems: [
       {
         name: "Android",
-        projects: [{ projectname: "Project 1",githublink:"https://github.com/game-dev-plus", imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
-      { projectname: "Project 1", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
-      { projectname: "Project 1", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
-      { projectname: "Project 1", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
-      { projectname: "Project 1", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
-    { projectname: "Project 1",githublink:"https://github.com/game-dev-plus", imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
+        projects: [{ projectName: "Project 1",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
+      { projectName: "Project 1", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
+      { projectName: "Project 1", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
+      { projectName: "Project 1", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
+      { projectName: "Project 1", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] },
+    { projectName: "Project 1",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "iOS",
-        projects: [{ projectname: "Project 2",githublink:"https://github.com/game-dev-plus", imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
+        projects: [{ projectName: "Project 2",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "Xamarin",
-        projects: [{ projectname: "Project 3", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
+        projects: [{ projectName: "Project 3", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "React Native",
-        projects: [{ projectname: "Project 4", githublink:"https://github.com/game-dev-plus",imagelinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
+        projects: [{ projectName: "Project 4", githubLink:"https://github.com/game-dev-plus",imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       }
     ]
   },
@@ -41,19 +39,19 @@ var headings = [
     subitems: [
       {
         name: "Nodejs",
-        projects: [{ projectname: "Project 5",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 5",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "Docker",
-        projects: [{ projectname: "Project 6",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 6",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "MSSQL",
-        projects: [{ projectname: "Project 7",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 7",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "MySQL",
-        projects: [{ projectname: "Project 8",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 8",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       }
     ]
   },
@@ -62,19 +60,19 @@ var headings = [
     subitems: [
       {
         name: "HTML",
-        projects: [{ projectname: "Project 9",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 9",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "CSS",
-        projects: [{ projectname: "Project 10",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 10",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "JavaScript",
-        projects: [{ projectname: "Project 11",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 11",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       },
       {
         name: "React Js",
-        projects: [{ projectname: "Project 12",githublink:"https://github.com/game-dev-plus", imagelinks: [""] }]
+        projects: [{ projectName: "Project 12",githubLink:"https://github.com/game-dev-plus", imageLinks: ["https://images.pexels.com/photos/1647975/pexels-photo-1647975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"] }]
       }
     ]
   }
@@ -90,13 +88,13 @@ function TabContainer({ children, dir, index,chipSelected }) {
   return (
     <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
       <div className={styles.root}>
-        {headings[index].subitems.map((items, subindex) => (
+        {headings[index].subitems.map((items, subIndex) => (
           <Chip
             label={items.name}
             clickable
-            key={subindex}
+            key={subIndex}
             className="chip"
-            onClick={event => chipSelected(index, subindex)}
+            onClick={event => chipSelected(index, subIndex)}
           />
         ))}
       </div>
@@ -110,8 +108,23 @@ export default class HeadingTab extends Component {
     this.state = {
       selectedIndex: 0,
       selectedSubIndex:0,
+      width: 0, 
+      height: 0,
       projectsToRender:headings[0].subitems[0].projects,
     };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
   handleChange = (event, value) => {
@@ -122,11 +135,11 @@ export default class HeadingTab extends Component {
     this.setState({ selectedIndex: index });
   };
 
-  handleChipSelected=(selectedIndex,selectedSubindex)=>{
+  handleChipSelected=(selectedIndex,selectedSubIndex)=>{
     this.setState({
       selectedIndex:selectedIndex,
-      selectedSubIndex:selectedSubindex,
-      projectsToRender:headings[selectedIndex].subitems[selectedSubindex].projects
+      selectedSubIndex:selectedSubIndex,
+      projectsToRender:headings[selectedIndex].subitems[selectedSubIndex].projects
     });
   }
   render() {
@@ -152,23 +165,24 @@ export default class HeadingTab extends Component {
             <TabContainer key={index} dir={swipeDir} index={index} chipSelected={this.handleChipSelected}/>
           ))}
         </SwipeableViews>
-
-           <GridList cellHeight={300} spacing={20} cols={3}>
+   
+        <Typography component="div" dir={swipeDir} style={{ padding: 8 * 3 }}>
+           <GridList cellHeight={300} spacing={20} cols={(this.state.width>800)?3:(this.state.width>500)?2:1}>
             {this.state.projectsToRender.map((project,index)=>(
               <GridListTile key={index}>
-              <img src={project.imagelinks} alt={project.projectname} />
+              <img src={project.imageLinks} alt={project.projectName} />
               <GridListTileBar
-                title={project.projectname}
+                title={project.projectName}
                 actionIcon={
                   <IconButton>
-                    <a href={project.githublink} rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
+                    <a href={project.githubLink} rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
                   </IconButton>
                 }
               />
             </GridListTile>
             ))}
           </GridList>
-
+          </Typography>
       </Paper>
     );
   }

@@ -10,7 +10,7 @@ import Hamburger from './Hamburger';
 
 export default class Home extends Component {
     render(){
-        return(
+        return(  
                 <div className="bgBlue">
                     <Hamburger className="hambuger" selected={0}/>
                     <p className="header">SUBASH ADHIKARI</p>

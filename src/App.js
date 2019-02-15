@@ -5,6 +5,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Home from './components/Home';
 import Technologies from './components/Technologies';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 //  import Hamburger from './components/Hamburger';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
            <Route exact path="/" component={Home}/>
            <Route exact path="/technologies/" component={Technologies}/>
            <Route exact path="/portfolio/" component={Portfolio}/>
+           <Route exact path="/contact/" component={Contact}/>
          </Switch>
        </BrowserRouter>
       </React.Fragment>

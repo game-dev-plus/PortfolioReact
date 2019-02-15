@@ -39,6 +39,7 @@ export default class Hamburger extends Component {
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
+          selected={this.state.selectedIndex}
         >
           {options.map((option, index) => (
             <NavLink

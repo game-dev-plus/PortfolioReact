@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Tabs,Tab,MuiThemeProvider,createMuiTheme} from "@material-ui/core";
+import {MuiThemeProvider,createMuiTheme} from "@material-ui/core";
 
 const theme = createMuiTheme({
     palette:{
         primary:{
-          main: "#7EFF94"}
-        ,
+          main: "#7EFF94"
+        },
+        primarydark:{
+            main: "#018217"
+          },
         secondary:{
            main: "#000000"
         }
