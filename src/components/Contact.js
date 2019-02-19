@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Paper, TextField, Typography,MuiThemeProvider,createMuiTheme,FormControl, Button,Icon } from '@material-ui/core';
+import { Paper, TextField, Typography,MuiThemeProvider,createMuiTheme,FormControl, Button } from '@material-ui/core';
 import '../css/contact.css';
 import Hamburger from './Hamburger';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,7 +39,7 @@ export default class Contact extends Component {
                     <p className="header">Contact Me</p>
                         <MuiThemeProvider theme={localTheme}>
                             <Paper className="paper-white" elevation={4}>
-                                <FormControl variant="outlined" className="formcontrol" >
+                                <FormControl variant="outlined" className="formControl" >
                                     <Typography component="div">
                                         <TextField label="Full Name" placeholder="Full Name" fullWidth margin="normal" />                
                                     </Typography>
